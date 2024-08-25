@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Level A1 - English Learning Hub</title>
+    <title>A1 - Beginner - Master English</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="site-logo">
-                <a href="index.html">
-                    <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
-                </a>
-                <h1>English Learning Hub</h1>
+                <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                <h1>Master English</h1>
             </div>
             <nav class="site-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://www.instagram.com" target="_blank">Our Instagram</a>
-                <a href="https://www.youtube.com" target="_blank">Our YouTube</a>
+                <a href="https://www.instagram.com" class="social-link">Our Instagram</a>
+                <a href="https://www.youtube.com" class="social-link">Our YouTube</a>
             </div>
         </div>
     </header>
 
-    <!-- Content for English Level A1 -->
-    <section class="content">
-        <div class="container">
-            <h2>English Level A1</h2>
-            <p>This course is designed for beginners who are starting to learn English. It covers the basics of grammar, vocabulary, and pronunciation to help you build a strong foundation.</p>
-            <!-- Add more details about English Level A1 here -->
-        </div>
+    <!-- Course Details Section -->
+    <section class="course-details">
+        <h2>A1 - Beginner</h2>
+        <p>This course is designed for absolute beginners. It covers the basics of English grammar, vocabulary, and pronunciation to help you build a solid foundation in the language.</p>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 English Learning Hub. All rights reserved.</p>
-        </div>
+        <p>© 2024 Master English. All rights reserved.</p>
     </footer>
+
+    <script>
+        // GSAP Animations
+        gsap.from("header", { 
+            y: -100, 
+            opacity: 0, 
+            duration: 1, 
+            ease: "easeOut"
+        });
+
+        gsap.from(".course-details", { 
+            opacity: 0, 
+            y: 50, 
+            duration: 1.5, 
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".course-details",
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: true
+            }
+        });
+    </script>
 </body>
 </html>
