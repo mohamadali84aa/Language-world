@@ -5,14 +5,14 @@ body {
     padding: 0;
     background: #f4f4f4;
     color: #333;
-    padding-top: 60px; /* Adjust this to the header height to avoid content overlap */
+    padding-top: 60px; /* Adjusted this to ensure content doesn't overlap with the header */
 }
 
 /* Header Styles */
 header {
     background: #ffffff;
     border-bottom: 1px solid #ddd;
-    padding: 5px 0; /* Reduced padding for a smaller header */
+    padding: 10px 0;
     height: 60px; /* Fixed height for the header */
     position: fixed;
     width: 100%;
@@ -39,8 +39,8 @@ header {
 
 .profile-photo {
     border-radius: 50%;
-    width: 40px; /* Reduced size */
-    height: 40px; /* Reduced size */
+    width: 50px; /* Adjusted size */
+    height: 50px; /* Adjusted size */
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
