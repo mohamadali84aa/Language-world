@@ -5,6 +5,7 @@ body {
     padding: 0;
     background: #f4f4f4;
     color: #333;
+    padding-top: 70px; /* Adjust this value to the height of the header */
 }
 
 /* Header Styles */
@@ -17,6 +18,8 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ensure the header is on top of content */
+    pointer-events: none; /* Prevents header from blocking clicks on content underneath */
 }
 
 .header-content {
@@ -24,6 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    pointer-events: all; /* Ensure header items can be interacted with */
 }
 
 .site-logo {
