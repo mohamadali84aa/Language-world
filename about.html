@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | English Learning Hub</title>
+    <title>About Us - Master English</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="site-logo">
-                <a href="index.html">
-                    <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
-                </a>
-                <h1>English Learning Hub</h1>
+                <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                <h1>Master English</h1>
             </div>
             <nav class="site-menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="social-media">
+                <a href="https://www.instagram.com" class="social-link">Our Instagram</a>
+                <a href="https://www.youtube.com" class="social-link">Our YouTube</a>
+            </div>
         </div>
     </header>
 
     <!-- About Section -->
     <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Welcome to English Learning Hub! We are dedicated to helping you achieve English fluency with innovative teaching methods and personalized support. Our team of experts brings a wealth of experience to ensure you reach your language goals.</p>
-            <a href="index.html" class="cta-button">Back to Home</a>
-        </div>
+        <h2>About Us</h2>
+        <p>Welcome to Master English! We are dedicated to helping you achieve fluency in English with our expert-led courses and resources. Our mission is to provide personalized and effective English education tailored to your needs.</p>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 English Learning Hub. All rights reserved.</p>
-        </div>
+        <p>© 2024 Master English. All rights reserved.</p>
     </footer>
+
+    <script>
+        // GSAP Animations
+        gsap.from("header", { 
+            y: -100, 
+            opacity: 0, 
+            duration: 1, 
+            ease: "easeOut"
+        });
+
+        gsap.from(".about", { 
+            opacity: 0, 
+            y: 50, 
+            duration: 1.5, 
+            ease: "power3.out",
+            scrollTrigger: {
+                trigger: ".about",
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: true
+            }
+        });
+    </script>
 </body>
 </html>
