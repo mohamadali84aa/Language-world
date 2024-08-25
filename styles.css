@@ -5,7 +5,6 @@ body {
     padding: 0;
     background: #f4f4f4;
     color: #333;
-    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
 }
 
 /* Header Styles */
@@ -14,11 +13,10 @@ header {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
     position: fixed;
-    top: 0;
     width: 100%;
+    top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s ease;
 }
 
 .header-content {
@@ -26,8 +24,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    margin: auto;
-    max-width: 1200px;
 }
 
 .site-logo {
@@ -87,21 +83,14 @@ header {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Main Content Styles */
-main {
-    padding-top: 60px; /* Adjust to the height of the fixed header */
-}
-
 /* Home Section */
 .home-section {
     padding: 100px 20px;
     text-align: center;
     background: linear-gradient(to bottom, #2a2a72, #009ffd);
     color: #ffffff;
-    min-height: 100vh;
 }
 
-/* CTA Button */
 .cta-button {
     display: inline-block;
     margin-top: 20px;
@@ -139,88 +128,88 @@ main {
 .master-english p {
     font-size: 1.2em;
     line-height: 1.6;
-    margin: 0 auto;
-    max-width: 800px;
+    margin-top: 20px;
 }
 
 /* Services Section */
 .services {
     padding: 50px 20px;
     background: #f4f4f4;
-    text-align: center;
+    color: #333333;
 }
 
 .service-boxes {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
-    gap: 20px;
 }
 
 .service-box {
     background: #ffffff;
-    border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    width: 200px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .service-box:hover {
+    transform: scale(1.05);
     background: #e0e0e0;
-    transform: translateY(-2px);
 }
 
 /* Contact Section */
 .contact {
     padding: 50px 20px;
     background: #ffffff;
+    color: #333333;
+    text-align: center;
 }
 
-form {
-    display: grid;
-    gap: 15px;
+.contact form {
     max-width: 600px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-form label {
+.contact label {
+    text-align: left;
     font-weight: bold;
 }
 
-form input, form textarea {
-    width: 100%;
+.contact input,
+.contact textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    width: 100%;
     box-sizing: border-box;
 }
 
-form button {
-    padding: 10px 20px;
-    background: #2575fc;
-    color: #ffffff;
+.contact button {
+    padding: 10px;
     border: none;
     border-radius: 5px;
+    background: #2575fc;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease;
 }
 
-form button:hover {
+.contact button:hover {
     background: #1d66d2;
-    transform: translateY(-2px);
 }
 
 /* Footer */
 footer {
     padding: 20px;
-    background: #2a2a72;
-    color: #ffffff;
+    background: #ffffff;
+    color: #333333;
     text-align: center;
-}
-
-footer p {
-    margin: 0;
+    border-top: 1px solid #ddd;
 }
