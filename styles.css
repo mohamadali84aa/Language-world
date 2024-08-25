@@ -1,18 +1,9 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-    color: #333;
-    padding-top: 70px; /* Adjust this to match the height of your header */
-}
-
 /* Header Styles */
 header {
     background: #ffffff;
     border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+    padding: 5px 0; /* Reduce padding for a smaller header */
+    height: 60px; /* Set a fixed height for the header */
     position: fixed;
     width: 100%;
     top: 0;
@@ -27,6 +18,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    height: 100%; /* Ensure header content aligns within the fixed height */
 }
 
 /* Site Logo Styles */
@@ -37,8 +29,8 @@ header {
 
 .profile-photo {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 40px; /* Reduce the profile photo size */
+    height: 40px; /* Reduce the profile photo size */
     margin-right: 10px;
     transition: transform 0.3s ease;
 }
@@ -89,138 +81,12 @@ header {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Home Section */
-.home-section {
-    padding: 100px 20px;
-    text-align: center;
-    background: linear-gradient(to bottom, #2a2a72, #009ffd);
-    color: #ffffff;
-}
-
-/* Call-to-Action Button Styles */
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #ffffff;
-    color: #2575fc;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #e0e0e0;
-    transform: translateY(-2px);
-}
-
-/* Master English Section */
-.master-english {
-    padding: 50px 20px;
-    background: #ffffff;
-    color: #333333;
-    text-align: center;
-    position: relative;
-}
-
-/* Master English Heading Styles */
-.master-english h2 {
-    margin-top: 0;
-    font-size: 2.5em;
-    color: #2575fc;
-    position: relative;
-    z-index: 1;
-}
-
-/* Master English Paragraph Styles */
-.master-english p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-top: 20px;
-}
-
-/* Services Section */
-.services {
-    padding: 50px 20px;
+/* Adjusted Padding for Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background: #f4f4f4;
-    color: #333333;
-}
-
-/* Service Boxes Container Styles */
-.service-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
-
-/* Service Box Styles */
-.service-box {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-}
-
-.service-box:hover {
-    transform: scale(1.05);
-    background: #e0e0e0;
-}
-
-/* Contact Section */
-.contact {
-    padding: 50px 20px;
-    background: #ffffff;
-    color: #333333;
-    text-align: center;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact label {
-    text-align: left;
-    font-weight: bold;
-}
-
-.contact input,
-.contact textarea {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.contact button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background: #2575fc;
-    color: #ffffff;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact button:hover {
-    background: #1d66d2;
-}
-
-/* Footer */
-footer {
-    padding: 20px;
-    background: #ffffff;
-    color: #333333;
-    text-align: center;
-    border-top: 1px solid #ddd;
+    color: #333;
+    padding-top: 60px; /* Match this padding to the header height */
 }
