@@ -6,7 +6,6 @@
     <meta name="description" content="Learn English with interactive lessons, resources, and expert guidance. Build your language skills for a brighter future.">
     <title>English Learning Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Link for smooth scrolling and animation libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
@@ -18,7 +17,7 @@
                 <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
                 <h1>English Learning Hub</h1>
             </div>
-            <!-- Right part with menu options -->
+            <!-- Right part with menu options and social media icons -->
             <nav class="site-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -28,6 +27,18 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="social-media">
+                <a href="https://www.youtube.com" target="_blank" class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.498 6.186a3.093 3.093 0 0 0-2.186-2.186C19.377 3.5 12 3.5 12 3.5S4.623 3.5 2.688 4a3.093 3.093 0 0 0-2.186 2.186A31.759 31.759 0 0 0 0 12a31.759 31.759 0 0 0 .502 5.814 3.093 3.093 0 0 0 2.186 2.186C4.623 20.5 12 20.5 12 20.5s7.377 0 9.312-1.314a3.093 3.093 0 0 0 2.186-2.186A31.759 31.759 0 0 0 24 12a31.759 31.759 0 0 0-.502-5.814zM10 15.5v-7l6 3.5-6 3.5z" fill="#FFFFFF"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.205 0 3.58 0 4.85.07a6.022 6.022 0 0 1 4.4 1.12 6.022 6.022 0 0 1 1.12 4.4c.07 1.27.07 1.646.07 4.85s0 3.58-.07 4.85a6.022 6.022 0 0 1-1.12 4.4 6.022 6.022 0 0 1-4.4 1.12c-1.27.07-1.646.07-4.85.07s-3.58 0-4.85-.07a6.022 6.022 0 0 1-4.4-1.12A6.022 6.022 0 0 1 .663 16.23C.593 14.96.593 14.585.593 11.77c0-3.205 0-3.58.07-4.85a6.022 6.022 0 0 1 1.12-4.4A6.022 6.022 0 0 1 6.15 2.233C7.42 2.163 7.796 2.163 12 2.163zM12 0c-3.285 0-3.692.013-4.975.072a8.373 8.373 0 0 0-6.085 3.633A8.373 8.373 0 0 0 0 7.987C-.059 9.271-.059 9.678-.059 12s0 2.727.07 4.01a8.373 8.373 0 0 0 3.633 6.085A8.373 8.373 0 0 0 7.987 24c1.287.059 1.692.072 4.975.072s3.692-.013 4.975-.072a8.373 8.373 0 0 0 6.085-3.633A8.373 8.373 0 0 0 24 16.01c.059-1.287.059-1.692.059-4.975s0-3.692-.059-4.975A8.373 8.373 0 0 0 16.01 3.637 8.373 8.373 0 0 0 9.937 0C8.65-.059 8.245-.072 5.003-.072 1.768-.072 1.765.013 0 0zm-5.918 10.88a5.418 5.418 0 1 1 10.835 0 5.418 5.418 0 0 1-10.835 0zm9.617 0a4.435 4.435 0 1 0-8.869 0 4.435 4.435 0 0 0 8.869 0zm2.685-4.88c0 .414-.337.75-.75.75s-.75-.336-.75-.75.336-.75.75-.75.75.336.75.75z" fill="#FFFFFF"/>
+                    </svg>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -67,45 +78,52 @@
             <h2>Knowledge Hub</h2>
             <ul>
                 <li class="animate__animated animate__fadeInUp"><a href="#">Top 10 Tips for Learning English Faster</a></li>
-                <li class="animate__animated animate__fadeInUp"><a href="#">How to Improve Your Pronunciation</a></li>
-                <li class="animate__animated animate__fadeInUp"><a href="#">Mastering English Grammar: A Complete Guide</a></li>
+                <li class="animate__animated animate__fadeInDown"><a href="#">How to Improve Your English Speaking Skills</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="#">The Best English Learning Apps and Tools</a></li>
+                <li class="animate__animated animate__fadeInDown"><a href="#">Common Mistakes in English and How to Avoid Them</a></li>
             </ul>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="get-started">
+        <div class="container">
+            <h2>Get Started with Us</h2>
+            <p>Ready to take your English skills to the next level? Contact us today to start your personalized learning journey!</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="container footer-content">
-            <div class="newsletter-box">
-                <h3>Subscribe to our Newsletter</h3>
-                <p>Get weekly tips and resources to help you master English.</p>
-                <form action="">
-                    <input type="email" placeholder="Enter your email" required>
+            <div class="footer-text">
+                <p>&copy; 2024 English Learning Hub. All rights reserved.</p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Your Email" required>
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
-
-            <div class="footer-info">
-                <p>© 2024 English Learning Hub. All rights reserved.</p>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
         </div>
     </footer>
-
-    <!-- Smooth Scroll Script -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
