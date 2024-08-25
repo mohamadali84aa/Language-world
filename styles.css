@@ -1,31 +1,26 @@
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Header Styling */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
     position: fixed;
-    width: 100%;
     top: 0;
-    z-index: 999;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 
 .site-logo {
@@ -35,113 +30,145 @@ header {
 
 .profile-photo {
     width: 50px;
+    height: 50px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 15px;
+}
+
+.site-logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
 }
 
 .site-menu ul {
-    display: flex;
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .site-menu ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 .site-menu ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 .site-menu ul li a:hover {
-    background-color: #4CAF50;
+    color: #f0a500;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
+.social-media {
+    display: flex;
+    align-items: center;
 }
 
-/* Main Home Section */
+.social-icon {
+    margin-left: 15px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f0a500;
+}
+
 .home-section {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+    padding: 100px 20px;
     text-align: center;
-    padding: 100px 0;
+    background: linear-gradient(45deg, #ff6f61, #de64f0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
 }
 
 .home-section h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.home-section p {
+    font-size: 1.2rem;
+    color: #fff;
 }
 
 .cta-button {
-    background-color: #f7b733;
-    color: white;
-    padding: 15px 25px;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
     border-radius: 5px;
+    font-size: 1rem;
 }
 
 .cta-button:hover {
-    background-color: #e69500;
+    background-color: #e08f00;
 }
 
-/* Footer Styling */
-footer {
-    background-color: #222;
-    color: white;
-    padding: 40px 0;
+.about-us, .services, .knowledge-hub, .get-started, .contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us h2, .services h2, .knowledge-hub h2, .get-started h2, .contact h2 {
+    font-size: 2rem;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    font-size: 1.1rem;
+    margin: 10px 0;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
 
-.newsletter-box {
-    max-width: 400px;
+.footer-text {
+    margin: 0;
 }
 
-.newsletter-box form {
-    display: flex;
+.newsletter {
+    text-align: center;
 }
 
-.newsletter-box input {
+.newsletter input {
     padding: 10px;
-    flex: 1;
-    margin-right: 10px;
-}
-
-.newsletter-box button {
-    padding: 10px;
-    background-color: #f7b733;
+    font-size: 1rem;
     border: none;
-    color: white;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-.newsletter-box button:hover {
-    background-color: #e69500;
+.newsletter button:hover {
+    background-color: #e08f00;
 }
 
-.footer-info ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-}
-
-.footer-info ul li {
-    margin-left: 20px;
-}
-
-.footer-info ul li a {
-    color: white;
-    text-decoration: none;
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
 }
