@@ -1,27 +1,22 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    color: #333;
 }
 
+/* Header Styles */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to right, #0000ff, #800080);
+    padding: 20px;
     color: #fff;
-    padding: 10px 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
 }
 
 .site-logo {
@@ -30,146 +25,122 @@ header {
 }
 
 .profile-photo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.site-logo h1 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
 .site-menu ul {
     list-style: none;
-    display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
-.site-menu ul li {
+.site-menu li {
     margin: 0 10px;
 }
 
-.site-menu ul li a {
+.site-menu a {
     color: #fff;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-}
-
-.site-menu ul li a:hover {
-    color: #f0a500;
+    font-weight: bold;
 }
 
 .social-media {
     display: flex;
-    align-items: center;
 }
 
 .social-icon {
     margin-left: 10px;
-    color: #fff;
-    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
 }
 
-.social-icon:hover {
-    color: #f0a500;
+.social-icon svg {
+    fill: #fff;
 }
 
+/* Main Body Section */
 .home-section {
-    padding: 100px 20px;
+    background: #f5f5f5;
+    padding: 40px 20px;
     text-align: center;
-    background: linear-gradient(45deg, #ff6f61, #de64f0);
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
 }
 
 .home-section h1 {
-    font-size: 2.2rem;
-    color: #fff;
-}
-
-.home-section p {
-    font-size: 1.1rem;
-    color: #fff;
+    margin-bottom: 20px;
 }
 
 .cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #f0a500;
+    background: #0000ff;
     color: #fff;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
 }
 
-.cta-button:hover {
-    background-color: #e08f00;
-}
-
-.about-us, .services, .knowledge-hub, .get-started, .contact {
-    padding: 60px 20px;
+/* About Section */
+.about-us {
+    background: #fff;
+    padding: 40px 20px;
     text-align: center;
 }
 
-.about-us h2, .services h2, .knowledge-hub h2, .get-started h2, .contact h2 {
-    font-size: 2rem;
+.about-us h2 {
+    margin-bottom: 20px;
 }
 
-.services ul {
-    list-style: none;
-    padding: 0;
+/* Services Section */
+.services {
+    background: #e0e0e0;
+    padding: 40px 20px;
 }
 
-.services ul li {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-.footer-content {
+.services-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-box {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-
-.footer-text {
-    margin: 0;
-}
-
-.newsletter {
+    margin: 10px;
+    width: 200px;
     text-align: center;
 }
 
-.newsletter input {
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+.service-image {
+    height: 100px;
+    background: #dcdcdc;
+    margin-top: 10px;
 }
 
-.newsletter button {
-    padding: 10px 20px;
-    background-color: #f0a500;
+/* Get Started Section */
+.get-started {
+    background: #0000ff;
     color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+    padding: 40px 20px;
+    text-align: center;
 }
 
-.newsletter button:hover {
-    background-color: #e08f00;
+.get-started h2 {
+    margin-bottom: 20px;
 }
 
-@keyframes gradientBG {
-    0% { background-position: 0% 0%; }
-    50% { background-position: 100% 100%; }
-    100% { background-position: 0% 0%; }
+/* Footer Styles */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
 }
