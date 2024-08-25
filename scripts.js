@@ -36,17 +36,29 @@ gsap.from(".master-english", {
 
 gsap.from(".service-box", { 
     opacity: 0, 
-    y: 50, 
+    y: 30, 
     duration: 1, 
     stagger: 0.2, 
-    ease: "power2.out"
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".services",
+        start: "top 80%",
+        end: "bottom 50%",
+        scrub: true
+    }
 });
 
 gsap.from(".contact form", { 
     opacity: 0, 
     y: 50, 
     duration: 1, 
-    ease: "power2.out"
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".contact",
+        start: "top 80%",
+        end: "bottom 60%",
+        scrub: true
+    }
 });
 
 gsap.from("footer", { 
@@ -60,17 +72,4 @@ gsap.from("footer", {
         end: "bottom 70%",
         scrub: true
     }
-});
-
-// Scroll Animations for Smooth Transitions
-gsap.to("body", {
-    scrollTrigger: {
-        trigger: "body",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-        pin: true
-    },
-    y: "-100%",
-    ease: "none"
 });
