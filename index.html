@@ -4,24 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn English with interactive lessons, resources, and expert guidance. Build your language skills for a brighter future.">
-    <title>Mohammad's English Learning Hub</title>
+    <title>English Learning Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Link for smooth scrolling and animation libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>Master English, Unlock Your Potential</h1>
-            <p>Your journey to fluency starts here. Learn English with personalized lessons and real-life guidance.</p>
-            <a href="#get-started" class="cta-button">Get Started</a>
+        <div class="container header-content">
+            <!-- Left part with logo and site name -->
+            <div class="site-logo">
+                <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+                <h1>English Learning Hub</h1>
+            </div>
+            <!-- Right part with menu options -->
+            <nav class="site-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#get-started">Get Started</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <!-- Main Body Section -->
+    <section id="home" class="home-section">
+        <div class="container">
+            <h1 class="animate__animated animate__fadeIn">Master English, Unlock Your Potential</h1>
+            <p>Your journey to fluency starts here. Learn English with personalized lessons and real-life guidance.</p>
+            <a href="#get-started" class="cta-button animate__animated animate__pulse animate__infinite">Get Started</a>
+        </div>
+    </section>
 
     <!-- About Us Section -->
     <section id="about-us" class="about-us">
         <div class="container">
-            <h2>About Us</h2>
-            <p>Founded by Mohammad, we specialize in teaching English to students at all levels, from beginners to advanced learners. Our mission is to help you build your language skills through practical and engaging lessons.</p>
+            <h2 class="animate__animated animate__fadeInUp">About Us</h2>
+            <p>We specialize in teaching English to students at all levels, from beginners to advanced learners. Our mission is to help you build your language skills through practical and engaging lessons.</p>
         </div>
     </section>
 
@@ -30,10 +53,10 @@
         <div class="container">
             <h2>Our Programs</h2>
             <ul>
-                <li><strong>Beginner English (A1-A2):</strong> Build a strong foundation with essential vocabulary and grammar.</li>
-                <li><strong>Intermediate English (B1-B2):</strong> Improve your conversational skills and expand your grammar knowledge.</li>
-                <li><strong>Advanced English (C1-C2):</strong> Master fluency, refine writing skills, and prepare for professional English use.</li>
-                <li><strong>IELTS/TOEFL Preparation:</strong> Achieve your target score with focused exam practice and strategies.</li>
+                <li class="animate__animated animate__fadeInLeft"><strong>Beginner English (A1-A2):</strong> Essential vocabulary and grammar.</li>
+                <li class="animate__animated animate__fadeInRight"><strong>Intermediate English (B1-B2):</strong> Conversational skills and grammar expansion.</li>
+                <li class="animate__animated animate__fadeInLeft"><strong>Advanced English (C1-C2):</strong> Fluency and professional writing.</li>
+                <li class="animate__animated animate__fadeInRight"><strong>IELTS/TOEFL Preparation:</strong> Focused exam practice and strategies.</li>
             </ul>
         </div>
     </section>
@@ -42,30 +65,47 @@
     <section id="knowledge-hub" class="knowledge-hub">
         <div class="container">
             <h2>Knowledge Hub</h2>
-            <p>Explore our resources and articles to improve your English every day.</p>
             <ul>
-                <li><a href="#">Top 10 Tips for Learning English Faster</a></li>
-                <li><a href="#">How to Improve Your Pronunciation</a></li>
-                <li><a href="#">Mastering English Grammar: A Complete Guide</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="#">Top 10 Tips for Learning English Faster</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="#">How to Improve Your Pronunciation</a></li>
+                <li class="animate__animated animate__fadeInUp"><a href="#">Mastering English Grammar: A Complete Guide</a></li>
             </ul>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions? Get in touch with us:</p>
-            <p>Email: <a href="mailto:mohamadali84aa@gmail.com">mohamadali84aa@gmail.com</a></p>
-            <p>Phone: +90 539 113 81 05</p>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
-        <div class="container">
-            <p>Designed and made by Elyas Salehi Shahraki. &copy; 2024 Mohammad's English Learning Hub. All rights reserved.</p>
+        <div class="container footer-content">
+            <div class="newsletter-box">
+                <h3>Subscribe to our Newsletter</h3>
+                <p>Get weekly tips and resources to help you master English.</p>
+                <form action="">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-info">
+                <p>© 2024 English Learning Hub. All rights reserved.</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
+
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
