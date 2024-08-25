@@ -18,9 +18,9 @@
             </div>
             <nav class="site-menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#" onclick="window.location.href='about.html';">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -32,19 +32,19 @@
     </header>
 
     <!-- Home Section -->
-    <section class="home-section">
+    <section id="home" class="home-section">
         <h1>Welcome to Master English</h1>
         <a href="#services" class="cta-button">Get Started</a>
     </section>
 
     <!-- Master English Section -->
-    <section class="master-english">
+    <section id="master-english" class="master-english">
         <h2>Master English</h2>
         <p>Transform your English skills with our comprehensive courses tailored to all levels. From beginner to advanced, we’ve got you covered.</p>
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section id="services" class="services">
         <div class="service-boxes">
             <div class="service-box" onclick="window.location.href='a1.html';">A1 - Beginner</div>
             <div class="service-box" onclick="window.location.href='a2.html';">A2 - Elementary</div>
@@ -55,8 +55,14 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Learn more about our mission and vision in helping students master English.</p>
+    </section>
+
     <!-- Contact Us Section -->
-    <section class="contact" id="contact">
+    <section id="contact" class="contact">
         <form id="contact-form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
@@ -76,70 +82,6 @@
         <p>© 2024 Master English. All rights reserved.</p>
     </footer>
 
-    <script>
-        // GSAP Animations
-        gsap.from("header", { 
-            y: -100, 
-            opacity: 0, 
-            duration: 1, 
-            ease: "easeOut"
-        });
-
-        gsap.from(".home-section h1", { 
-            opacity: 0, 
-            y: 50, 
-            duration: 1.2, 
-            ease: "power3.out"
-        });
-
-        gsap.from(".cta-button", { 
-            opacity: 0, 
-            y: 30, 
-            duration: 1.5, 
-            delay: 0.5, 
-            ease: "back.out(1.7)"
-        });
-
-        gsap.from(".master-english", { 
-            opacity: 0, 
-            y: 100, 
-            duration: 1.5, 
-            ease: "power3.out",
-            scrollTrigger: {
-                trigger: ".master-english",
-                start: "top 80%",
-                end: "bottom 60%",
-                scrub: true
-            }
-        });
-
-        gsap.from(".service-box", { 
-            opacity: 0, 
-            y: 50, 
-            duration: 1, 
-            stagger: 0.2, 
-            ease: "power2.out"
-        });
-
-        gsap.from(".contact form", { 
-            opacity: 0, 
-            y: 50, 
-            duration: 1, 
-            ease: "power2.out"
-        });
-
-        gsap.from("footer", { 
-            opacity: 0, 
-            y: 50, 
-            duration: 1, 
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: "footer",
-                start: "top 90%",
-                end: "bottom 70%",
-                scrub: true
-            }
-        });
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
