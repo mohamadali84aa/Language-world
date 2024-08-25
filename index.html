@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Learning Hub</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -20,39 +22,31 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href="https://instagram.com/yourprofile" class="social-icon" aria-label="Instagram">
-                    <!-- SVG for Instagram -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                        <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .4 1.5.9.4.4.7.9.9 1.5.2.5.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.4 1-.9 1.5-.4.4-.9.7-1.5.9-.5.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.4-1.5-.9-.4-.4-.7-.9-.9-1.5-.2-.5-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.4-1 .9-1.5.4-.4.9-.7 1.5-.9.5-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.9.1 4.8.3 3.9.6 2.9.9 2.2 1.3 1.6 1.9.9 2.5.5 3.3.2 4.2c-.3.9-.5 2-.6 3.1C0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.2.3 2.3.6 3.1.3.9.7 1.7 1.4 2.4.6.6 1.4 1.1 2.4 1.4.9.3 2 .5 3.1.6C8.3 24 8.7 24 12 24s3.7 0 4.9-.1c1.2-.1 2.3-.3 3.1-.6.9-.3 1.7-.7 2.4-1.4.6-.6 1.1-1.4 1.4-2.4.3-.9.5-2 .6-3.1.1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.2-.3-2.3-.6-3.1-.3-.9-.7-1.7-1.4-2.4-.6-.6-1.4-1.1-2.4-1.4-.9-.3-2-.5-3.1-.6C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2S8.6 18.2 12 18.2s6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm4.4-10.7c-.8 0-1.4-.6-1.4-1.4s.6-1.4 1.4-1.4 1.4.6 1.4 1.4-.6 1.4-1.4 1.4z"></path>
-                    </svg>
-                </a>
-                <a href="https://youtube.com/yourchannel" class="social-icon" aria-label="YouTube">
-                    <!-- SVG for YouTube -->
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                        <path d="M10 15l5-3-5-3v6zm9-3c0 1.2-.1 2.4-.3 3.5-.2 1.1-.7 2.1-1.4 3-1.4 1.5-3.2 2.4-5.3 2.4s-3.9-.9-5.3-2.4c-.7-.9-1.2-1.9-1.4-3-.2-1.1-.3-2.3-.3-3.5s.1-2.4.3-3.5c.2-1.1.7-2.1 1.4-3 1.4-1.5 3.2-2.4 5.3-2.4s3.9.9 5.3 2.4c.7.9 1.2 1.9 1.4 3 .2 1.1.3 2.3.3 3.5zm-8.5-6.4c-4.5 0-8.1 3.6-8.1 8.1s3.6 8.1 8.1 8.1 8.1-3.6 8.1-8.1-3.6-8.1-8.1-8.1z"></path>
-                    </svg>
-                </a>
+                <a href="https://www.instagram.com" target="_blank">Our Instagram</a>
+                <a href="https://www.youtube.com" target="_blank">Our YouTube</a>
             </div>
         </div>
     </header>
 
     <!-- Home Section -->
     <section class="home-section">
-        <h1>Master English with Us!</h1>
-        <a href="index.html#contact" class="cta-button">Get Started</a>
+        <div class="container">
+            <h1>Welcome to English Learning Hub</h1>
+            <p>Your journey to mastering English starts here.</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
     </section>
 
     <!-- Master English Section -->
     <section id="master-english" class="master-english">
         <div class="container">
             <h2>Master English</h2>
-            <p>At English Learning Hub, we provide a comprehensive approach to mastering English. Our expert instructors and engaging lessons ensure that you gain proficiency and confidence in using English.</p>
-            <!-- Add animations or interactive elements here -->
+            <p>Our comprehensive English programs are designed to help you achieve fluency and confidence in the language. Explore our offerings and find the right fit for your needs.</p>
         </div>
     </section>
 
@@ -60,30 +54,49 @@
     <section id="services" class="services">
         <div class="container">
             <h2>Our Services</h2>
-            <div class="services-container">
-                <div class="service-box">
-                    <h3>Beginner</h3>
-                    <div class="service-image"></div>
-                    <p>Start your English journey with fundamental lessons and practice.</p>
+            <div class="service-boxes">
+                <div class="service-box" onclick="location.href='a1.html'">
+                    <h3>English Level A1</h3>
+                    <p>Beginner English courses to get you started.</p>
                 </div>
-                <div class="service-box">
-                    <h3>Elementary</h3>
-                    <div class="service-image"></div>
-                    <p>Enhance your skills with more complex structures and vocabulary.</p>
+                <div class="service-box" onclick="location.href='a2.html'">
+                    <h3>English Level A2</h3>
+                    <p>Elementary English to build a solid foundation.</p>
                 </div>
-                <!-- Additional services can be added here -->
+                <div class="service-box" onclick="location.href='b1.html'">
+                    <h3>English Level B1</h3>
+                    <p>Intermediate English to enhance your communication skills.</p>
+                </div>
+                <div class="service-box" onclick="location.href='b2.html'">
+                    <h3>English Level B2</h3>
+                    <p>Upper-intermediate English to refine your language proficiency.</p>
+                </div>
+                <div class="service-box" onclick="location.href='c1.html'">
+                    <h3>English Level C1</h3>
+                    <p>Advanced English for near-native proficiency.</p>
+                </div>
+                <div class="service-box" onclick="location.href='c2.html'">
+                    <h3>English Level C2</h3>
+                    <p>Proficiency level English to master the language.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Us Section -->
     <section id="contact" class="contact">
         <div class="container">
             <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
                 <button type="submit">Send</button>
             </form>
         </div>
@@ -95,5 +108,21 @@
             <p>&copy; 2024 English Learning Hub. All rights reserved.</p>
         </div>
     </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            var mailtoLink = 'mailto:mohamadali84aa@gmail.com?subject=Contact Form Submission&body=' +
+                encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+            window.location.href = mailtoLink; // Trigger email client
+        });
+    </script>
 </body>
 </html>
