@@ -20,7 +20,7 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#" onclick="window.location.href='about.html';">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -44,7 +44,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="service-boxes">
             <div class="service-box" onclick="window.location.href='a1.html';">A1 - Beginner</div>
             <div class="service-box" onclick="window.location.href='a2.html';">A2 - Elementary</div>
@@ -115,17 +115,29 @@
 
         gsap.from(".service-box", { 
             opacity: 0, 
-            y: 50, 
+            y: 30, 
             duration: 1, 
             stagger: 0.2, 
-            ease: "power2.out"
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".services",
+                start: "top 80%",
+                end: "bottom 50%",
+                scrub: true
+            }
         });
 
         gsap.from(".contact form", { 
             opacity: 0, 
             y: 50, 
             duration: 1, 
-            ease: "power2.out"
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".contact",
+                start: "top 80%",
+                end: "bottom 60%",
+                scrub: true
+            }
         });
 
         gsap.from("footer", { 
