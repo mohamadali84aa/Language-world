@@ -227,6 +227,11 @@ footer {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    /* Adjust the padding of the body on mobile */
+    body {
+        padding-top: 110px; /* Increase this value to ensure content doesn't overlap */
+    }
+
     .header-content {
         flex-direction: column;
         align-items: flex-start;
