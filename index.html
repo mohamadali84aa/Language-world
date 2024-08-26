@@ -23,23 +23,31 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <div class="social-media">
-                <a href="https://www.instagram.com" class="social-link">Our Instagram</a>
-                <a href="https://www.youtube.com" class="social-link">Our YouTube</a>
-            </div>
         </div>
     </header>
 
     <!-- Home Section -->
     <section class="home-section">
         <h1>Welcome to Master English</h1>
-        <a href="#contact" class="cta-button">Get Started</a>
+        <a href="#services" class="cta-button">Get Started</a>
     </section>
 
     <!-- Master English Section -->
     <section class="master-english">
         <h2>Master English</h2>
         <p>Transform your English skills with our comprehensive courses tailored to all levels. From beginner to advanced, we’ve got you covered.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="service-boxes">
+            <div class="service-box" onclick="window.location.href='a1.html';">A1 - Beginner</div>
+            <div class="service-box" onclick="window.location.href='a2.html';">A2 - Elementary</div>
+            <div class="service-box" onclick="window.location.href='b1.html';">B1 - Intermediate</div>
+            <div class="service-box" onclick="window.location.href='b2.html';">B2 - Upper Intermediate</div>
+            <div class="service-box" onclick="window.location.href='c1.html';">C1 - Advanced</div>
+            <div class="service-box" onclick="window.location.href='c2.html';">C2 - Proficiency</div>
+        </div>
     </section>
 
     <!-- Contact Us Section -->
@@ -57,6 +65,7 @@
             <button type="submit">Send</button>
         </form>
 
+        <!-- Social Media Links -->
         <div class="social-media">
             <a href="https://www.instagram.com" class="social-link">Our Instagram</a>
             <a href="https://www.youtube.com" class="social-link">Our YouTube</a>
@@ -101,6 +110,20 @@
                 trigger: ".master-english",
                 start: "top 80%",
                 end: "bottom 60%",
+                scrub: true
+            }
+        });
+
+        gsap.from(".service-box", { 
+            opacity: 0, 
+            y: 30, 
+            duration: 1, 
+            stagger: 0.2, 
+            ease: "power2.out",
+            scrollTrigger: {
+                trigger: ".services",
+                start: "top 80%",
+                end: "bottom 50%",
                 scrub: true
             }
         });
