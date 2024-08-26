@@ -77,18 +77,6 @@ header {
     gap: 15px;
 }
 
-.social-link {
-    text-decoration: none;
-    color: #2575fc;
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-.social-link:hover {
-    color: #1d66d2;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
 /* Home Section */
 .home-section {
     padding: 100px 20px;
@@ -145,6 +133,7 @@ header {
     padding: 50px 20px;
     background: #f4f4f4;
     color: #333333;
+    /* Removed Service Title */
 }
 
 /* Service Boxes Container Styles */
@@ -214,6 +203,12 @@ header {
 
 .contact button:hover {
     background: #1d66d2;
+}
+
+/* Social Media Section Under Contact */
+.contact .social-media {
+    margin-top: 20px;
+    justify-content: center;
 }
 
 /* Footer */
