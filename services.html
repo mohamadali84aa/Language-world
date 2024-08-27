@@ -29,7 +29,7 @@
         </div>
     </header>
 
-    <!-- services Section -->
+    <!-- Services Section -->
     <section class="services">
         <div class="services-box">
             <h2>SERVICES</h2>
@@ -41,7 +41,8 @@
     .services {
         display: flex;
         justify-content: center;
-        padding: 20px 20px;
+        align-items: center; /* Centering vertically if necessary */
+        padding: 10px 20px;
         background: #f4f4f4;
         color: #333;
         text-align: center;
@@ -49,96 +50,276 @@
 
     /* services-box Styles */
     .services-box {
-        background: linear-gradient(to bottom, #2a2a72, #009ffd); /* Linear gradient background */
-        border-radius: 15px; /* Curved corners */
-        padding: 30px;
+        background: linear-gradient(to bottom, #00d289, #00fff3);
+        border-radius: 15px;
+        padding: 20px;
         max-width: 800px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-        transform: scale(1); /* Initial scale */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    /* Hover Effect */
     .services-box:hover {
-        transform: scale(1.03); /* Slightly enlarge on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
-</style>
-      <!-- a1 Section -->
+    </style>
+
+    <!-- A1 Section -->
     <section class="a1">
-        <div class="a1-box">
-            <h2>A1 - Beginner</h2>
-            <p>This course is designed for absolute beginners. It covers the basics of English grammar, vocabulary, and pronunciation to help you build a solid foundation in the language.</p>
-        </div>
+        <a href="a1.html" class="a1-link">
+            <div class="a1-box">
+                <h2>A1 - Beginner</h2>
+                <p>This course is designed for absolute beginners. It covers the basics of English grammar, vocabulary, and pronunciation to help you build a solid foundation in the language.</p>
+            </div>
+        </a>
     </section>
 
     <style>
     /* a1 */
-    .services {
+    .a1 {
         display: flex;
         justify-content: center;
-        padding: 50px 20px;
+        align-items: center; /* Center vertically */
+        padding: 5px 20px;
         background: #f4f4f4;
         color: #333;
     }
 
-    /* a1-box Styles */
     .a1-box {
-        background: linear-gradient(to bottom, #2a2a72, #009ffd); /* Linear gradient background */
-        border-radius: 15px; /* Curved corners */
+        background: linear-gradient(to bottom, #00fff3, #009ffd);
+        border-radius: 15px;
         padding: 30px;
         max-width: 800px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-        transform: scale(1); /* Initial scale */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        text-align: center;
     }
 
-    /* Hover Effect */
     .a1-box:hover {
-        transform: scale(1.03); /* Slightly enlarge on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
-</style>
-      <!-- a2 Section -->
+    </style>
+
+    <!-- A2 Section -->
     <section class="a2">
-        <div class="a2-box">
-            <h2>A1 - Beginner</h2>
-            <p>This course is designed for absolute beginners. It covers the basics of English grammar, vocabulary, and pronunciation to help you build a solid foundation in the language.</p>
-        </div>
+        <a href="a2.html" class="a2-link">
+            <div class="a2-box">
+                <h2>A2 - Elementary</h2>
+                <p>This course builds on the basics, introducing more vocabulary and simple sentence structures to help you communicate in everyday situations.</p>
+            </div>
+        </a>
     </section>
+
 
     <style>
     /* a2 */
     .a2 {
         display: flex;
         justify-content: center;
-        padding: 50px 20px;
+        align-items: center;
+        padding: 5px 20px;
         background: #f4f4f4;
         color: #333;
     }
 
-    /* a2-box Styles */
     .a2-box {
-        background: linear-gradient(to bottom, #2a2a72, #009ffd); /* Linear gradient background */
-        border-radius: 15px; /* Curved corners */
+        background: linear-gradient(to bottom, #009ffd, #feb47b);
+        border-radius: 15px;
         padding: 30px;
         max-width: 800px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-        transform: scale(1); /* Initial scale */
-        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        text-align: center;
     }
 
-    /* Hover Effect */
     .a2-box:hover {
-        transform: scale(1.03); /* Slightly enlarge on hover */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
-</style>
-            <div class="social-media">
-                <a href="https://www.instagram.com" class="social-link">Our Instagram</a>
-                <a href="https://www.youtube.com" class="social-link">Our YouTube</a>
-            </div>
+    </style>
 
+    <!-- B1 Section -->
+    <section class="b1">
+        <a href="b1.html" class="b1-link">
+            <div class="b1-box">
+                <h2>B1 - Intermediate</h2>
+                <p>This course helps you improve your grammar and vocabulary, allowing you to express yourself more clearly and engage in more complex conversations.</p>
+            </div>
+        </a>
+    </section>
+
+    <style>
+    /* b1 */
+    .b1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    .b1-box {
+        background: linear-gradient(to bottom, #feb47b, #56ab2f);
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        text-align: center;
+    }
+
+    .b1-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+
+    <!-- B2 Section -->
+    <section class="b2">
+        <a href="b2.html" class="b2-link">
+            <div class="b2-box">
+                <h2>B2 - Upper-Intermediate</h2>
+                <p>This course enables you to understand more complex texts and engage in detailed discussions, preparing you for professional or academic use of English.</p>
+            </div>
+        </a>
+    </section>
+
+    <style>
+    /* b2 */
+    .b2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    .b2-box {
+        background: linear-gradient(to bottom, #56ab2f, #a8e063);
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        text-align: center;
+    }
+
+    .b2-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+
+    <!-- C1 Section -->
+    <section class="c1">
+        <a href="c1.html" class="c1-link">
+            <div class="c1-box">
+                <h2>C1 - Advanced</h2>
+                <p>This course helps you master the nuances of the language, enhancing your ability to communicate with fluency and accuracy in complex situations.</p>
+            </div>
+        </a>
+    </section>
+
+    <style>
+    /* c1 */
+    .c1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    .c1-box {
+        background: linear-gradient(to bottom, #a8e063, #ff6f61);
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        text-align: center;
+    }
+
+    .c1-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+
+    <!-- C2 Section -->
+    <section class="c2">
+        <a href="c2.html" class="c2-link">
+            <div class="c2-box">
+                <h2>C2 - Proficiency</h2>
+                <p>This course is designed to help you attain near-native proficiency, allowing you to understand, communicate, and express yourself effortlessly in any situation.</p>
+            </div>
+        </a>
+    </section>
+
+    <style>
+    /* c2 */
+    .c2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 20px;
+        background: #f4f4f4;
+        color: #333;
+    }
+
+    .c2-box {
+        background: linear-gradient(to bottom, #ff6f61, #de6161);
+        border-radius: 15px;
+        padding: 30px;
+        max-width: 800px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: scale(1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: white;
+        text-align: center;
+    }
+
+    .c2-box:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    </style>
+    
+    
+       <!-- hyperlink style -->
+
+  <style>
+        /* Add this to your CSS file */
+        a {
+            text-decoration: none; /* Remove default underline */
+            color: inherit; /* Ensure link inherits text color */
+            display: block; /* Make <a> a block-level element */
+        }
+
+        .services-link, .a1-link, .a2-link, .b1-link, .b2-link, .c1-link, .c2-link {
+            /* Optional: Add styles for hover effect or other states */
+        }
+    </style>
+ 
+    <div class="social-media">
+        <a href="https://www.instagram.com" class="social-link">Our Instagram</a>
+        <a href="https://www.youtube.com" class="social-link">Our YouTube</a>
+    </div>
 
     <!-- Footer -->
     <footer>
